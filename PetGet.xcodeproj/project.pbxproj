@@ -14,6 +14,9 @@
 		23A670B81D02BC6B0039BBE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A670B61D02BC6B0039BBE2 /* LaunchScreen.storyboard */; };
 		23A670C31D02BC6B0039BBE2 /* PetGetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A670C21D02BC6B0039BBE2 /* PetGetTests.swift */; };
 		23A670CE1D02BC6B0039BBE2 /* PetGetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A670CD1D02BC6B0039BBE2 /* PetGetUITests.swift */; };
+		23CD3CF11D02C32C0092B5C6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD3CEF1D02C32C0092B5C6 /* Fabric.framework */; };
+		23CD3CF21D02C32C0092B5C6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23CD3CF01D02C32C0092B5C6 /* Crashlytics.framework */; };
+		3EE22D6D14448A5BEC3D935A /* libPods-PetGet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE342391CF6B6C73BB5D9B4 /* libPods-PetGet.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1CE342391CF6B6C73BB5D9B4 /* libPods-PetGet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PetGet.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A670AA1D02BC6B0039BBE2 /* PetGet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetGet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A670AD1D02BC6B0039BBE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23A670AF1D02BC6B0039BBE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		23A670C91D02BC6B0039BBE2 /* PetGetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetGetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A670CD1D02BC6B0039BBE2 /* PetGetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetGetUITests.swift; sourceTree = "<group>"; };
 		23A670CF1D02BC6B0039BBE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23CD3CEF1D02C32C0092B5C6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
+		23CD3CF01D02C32C0092B5C6 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
+		4611925C1D0DE42C2BEAF415 /* Pods-PetGet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetGet.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetGet/Pods-PetGet.debug.xcconfig"; sourceTree = "<group>"; };
+		78FEC4255E9E7E1B1E2E3401 /* Pods-PetGet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetGet.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetGet/Pods-PetGet.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23CD3CF21D02C32C0092B5C6 /* Crashlytics.framework in Frameworks */,
+				23CD3CF11D02C32C0092B5C6 /* Fabric.framework in Frameworks */,
+				3EE22D6D14448A5BEC3D935A /* libPods-PetGet.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +92,8 @@
 				23A670C11D02BC6B0039BBE2 /* PetGetTests */,
 				23A670CC1D02BC6B0039BBE2 /* PetGetUITests */,
 				23A670AB1D02BC6B0039BBE2 /* Products */,
+				D05C5C337F152ACA0B7B42EC /* Pods */,
+				88B0162FE2D0AE9A32111644 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +110,8 @@
 		23A670AC1D02BC6B0039BBE2 /* PetGet */ = {
 			isa = PBXGroup;
 			children = (
+				23CD3CEF1D02C32C0092B5C6 /* Fabric.framework */,
+				23CD3CF01D02C32C0092B5C6 /* Crashlytics.framework */,
 				23A670AD1D02BC6B0039BBE2 /* AppDelegate.swift */,
 				23A670AF1D02BC6B0039BBE2 /* ViewController.swift */,
 				23A670B11D02BC6B0039BBE2 /* Main.storyboard */,
@@ -125,6 +140,23 @@
 			path = PetGetUITests;
 			sourceTree = "<group>";
 		};
+		88B0162FE2D0AE9A32111644 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CE342391CF6B6C73BB5D9B4 /* libPods-PetGet.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D05C5C337F152ACA0B7B42EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4611925C1D0DE42C2BEAF415 /* Pods-PetGet.debug.xcconfig */,
+				78FEC4255E9E7E1B1E2E3401 /* Pods-PetGet.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +164,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23A670D21D02BC6B0039BBE2 /* Build configuration list for PBXNativeTarget "PetGet" */;
 			buildPhases = (
+				F4AF759144CEA1676712F0F1 /* 📦 Check Pods Manifest.lock */,
 				23A670A61D02BC6B0039BBE2 /* Sources */,
 				23A670A71D02BC6B0039BBE2 /* Frameworks */,
 				23A670A81D02BC6B0039BBE2 /* Resources */,
+				23CD3CEE1D02C2EA0092B5C6 /* ShellScript */,
+				0D2EAF48BD41AA461D59EE61 /* 📦 Embed Pods Frameworks */,
+				0F6ABF27326F867EB935DA72 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +286,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D2EAF48BD41AA461D59EE61 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetGet/Pods-PetGet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0F6ABF27326F867EB935DA72 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetGet/Pods-PetGet-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23CD3CEE1D02C2EA0092B5C6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 641c1af9675270dbed145fbc8437b990ae01237a 817691a09ef5ec9a26cedafb581f15f2f9056201c4415d3a4f0187215cd7f21c";
+		};
+		F4AF759144CEA1676712F0F1 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23A670A61D02BC6B0039BBE2 /* Sources */ = {
@@ -399,8 +496,13 @@
 		};
 		23A670D31D02BC6B0039BBE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4611925C1D0DE42C2BEAF415 /* Pods-PetGet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PetGet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayi.PetGet;
@@ -410,8 +512,13 @@
 		};
 		23A670D41D02BC6B0039BBE2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78FEC4255E9E7E1B1E2E3401 /* Pods-PetGet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = PetGet/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ayi.PetGet;
@@ -484,6 +591,7 @@
 				23A670D41D02BC6B0039BBE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23A670D51D02BC6B0039BBE2 /* Build configuration list for PBXNativeTarget "PetGetTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +600,7 @@
 				23A670D71D02BC6B0039BBE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23A670D81D02BC6B0039BBE2 /* Build configuration list for PBXNativeTarget "PetGetUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +609,7 @@
 				23A670DA1D02BC6B0039BBE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
