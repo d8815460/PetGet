@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'D08CC776CC68684DA62087A97862953C'
+               BlueprintIdentifier = 'AC94D3D34AC7D956114CCCDB'
                BlueprintName = 'RJImageLoader'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libRJImageLoader.a'>
+               BuildableName = 'RJImageLoader.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

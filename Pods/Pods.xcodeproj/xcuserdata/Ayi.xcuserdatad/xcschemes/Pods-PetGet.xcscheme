@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '00951E8B1034B8A8A81525E68D93270F'
+               BlueprintIdentifier = 'E9D0FA5FF39FA210A6FA00E7'
                BlueprintName = 'Pods-PetGet'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-PetGet.a'>
+               BuildableName = 'Pods_PetGet.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

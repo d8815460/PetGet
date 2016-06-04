@@ -1,0 +1,6 @@
+framework module Pods_PetGet {
+  umbrella header "Pods-PetGet-umbrella.h"
+
+  export *
+  module * { export * }
+}

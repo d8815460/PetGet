@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "196110EA50F14F2C1961A9CCF99E7380AFDD3EDD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : 0,
+    "196110EA50F14F2C1961A9CCF99E7380AFDD3EDD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "959DDF02-CD30-4775-8C37-42FABB672DD9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : "PetGet\/Kingfisher\/",
+    "196110EA50F14F2C1961A9CCF99E7380AFDD3EDD" : "PetGet\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Final",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Final.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/onevcat\/Kingfisher.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/d8815460\/PetGet.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "196110EA50F14F2C1961A9CCF99E7380AFDD3EDD"
+    }
+  ]
+}

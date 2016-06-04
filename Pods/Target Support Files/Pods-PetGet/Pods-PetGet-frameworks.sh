@@ -16,7 +16,7 @@ install_framework()
     local source="$1"
   fi
 
-  local destination="${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
+  local destination="${CONFIGURATION_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}"
 
   if [ -L "${source}" ]; then
       echo "Symlinked..."
@@ -82,3 +82,34 @@ strip_invalid_archs() {
   fi
 }
 
+
+if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-PetGet/Bolts.framework"
+  install_framework "Pods-PetGet/FBSDKCoreKit.framework"
+  install_framework "Pods-PetGet/FBSDKLoginKit.framework"
+  install_framework "Pods-PetGet/FormatterKit.framework"
+  install_framework "Pods-PetGet/JSONKit_NoWarning.framework"
+  install_framework "Pods-PetGet/MBProgressHUD.framework"
+  install_framework "Pods-PetGet/Parse.framework"
+  install_framework "Pods-PetGet/ParseCrashReporting.framework"
+  install_framework "Pods-PetGet/ParseFacebookUtilsV4.framework"
+  install_framework "Pods-PetGet/ParseUI.framework"
+  install_framework "Pods-PetGet/RJImageLoader.framework"
+  install_framework "Pods-PetGet/Reachability.framework"
+  install_framework "Pods-PetGet/SDWebImage.framework"
+fi
+if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-PetGet/Bolts.framework"
+  install_framework "Pods-PetGet/FBSDKCoreKit.framework"
+  install_framework "Pods-PetGet/FBSDKLoginKit.framework"
+  install_framework "Pods-PetGet/FormatterKit.framework"
+  install_framework "Pods-PetGet/JSONKit_NoWarning.framework"
+  install_framework "Pods-PetGet/MBProgressHUD.framework"
+  install_framework "Pods-PetGet/Parse.framework"
+  install_framework "Pods-PetGet/ParseCrashReporting.framework"
+  install_framework "Pods-PetGet/ParseFacebookUtilsV4.framework"
+  install_framework "Pods-PetGet/ParseUI.framework"
+  install_framework "Pods-PetGet/RJImageLoader.framework"
+  install_framework "Pods-PetGet/Reachability.framework"
+  install_framework "Pods-PetGet/SDWebImage.framework"
+fi

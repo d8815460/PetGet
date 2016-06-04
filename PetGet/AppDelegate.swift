@@ -10,18 +10,64 @@ import UIKit
 import Fabric
 import Crashlytics
 
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    // MARK: - UIApplicationDelegate
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         // Fabric
         Fabric.with([Crashlytics.self])
-
+        // ****************************************************************************
+        // Parse initialization
+        // FIXME: CrashReporting currently query to cydia://        
+        ParseCrashReporting.enable()
+        Parse.setApplicationId("vvyRK6XFXbYnc7vaHd8O5j5x7j8fIHkJhQUmNF4P", clientKey: "HuggZTGwHpiV87ISpCm1xJ6a2YYGS3E6RVjtaA9p")
+        // PFFacebookUtils.initializeFacebook()
+        // TODO: V4      
+        PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
+        // ****************************************************************************
+        
+        // Track app open.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        // 將Badge歸零
+        if application.applicationIconBadgeNumber != 0 {
+            application.applicationIconBadgeNumber = 0
+            PFInstallation.currentInstallation().saveInBackground()
+        }
+        
+        // 自動產生一個用戶
+        PFUser.enableAutomaticUser()
+        
+        let defaultACL = PFACL()
+        // If you would like all objects to be private by default, remove this line.
+        defaultACL.setReadAccess(true, forUser: PFUser.currentUser()!)
+        PFACL.setDefaultACL(defaultACL, withAccessForCurrentUser: true)
+        
+        if (application.applicationState != UIApplicationState.Background) {
+            // Track an app open here if we launch with a push, unless
+            // "content_available" was used to trigger a background push (introduced in iOS 7).
+            // In that case, we skip tracking here to avoid double counting the app-open.
+//            BOOL preBackgroundPush = ![application respondsToSelector:@selector(backgroundRefreshStatus)];
+//            BOOL oldPushHandlerOnly = ![self respondsToSelector:@selector(application:didReceiveRemoteNotification:fetchCompletionHandler:)];
+//            BOOL noPushPayload = ![launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+//            if (preBackgroundPush || oldPushHandlerOnly || noPushPayload) {
+//                [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+//            }
+            PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        }
+        
+        // Register for Push Notitications
+        let userNotificationTypes: UIUserNotificationType = [UIUserNotificationType.Alert, UIUserNotificationType.Badge, UIUserNotificationType.Sound]
+        let settings: UIUserNotificationSettings = UIUserNotificationSettings(forTypes: userNotificationTypes, categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(settings)
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
+        
         return true
     }
 
