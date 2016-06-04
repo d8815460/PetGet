@@ -85,6 +85,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-PetGet/Bolts.framework"
+  install_framework "Pods-PetGet/Canvas.framework"
   install_framework "Pods-PetGet/FBSDKCoreKit.framework"
   install_framework "Pods-PetGet/FBSDKLoginKit.framework"
   install_framework "Pods-PetGet/FormatterKit.framework"
@@ -100,6 +101,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-PetGet/Bolts.framework"
+  install_framework "Pods-PetGet/Canvas.framework"
   install_framework "Pods-PetGet/FBSDKCoreKit.framework"
   install_framework "Pods-PetGet/FBSDKLoginKit.framework"
   install_framework "Pods-PetGet/FormatterKit.framework"
